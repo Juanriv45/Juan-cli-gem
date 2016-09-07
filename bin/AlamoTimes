@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
+require "bundler/setup"
+require "JR_Cli_Gem"
 
 require './lib/JR_Cli_Gem'
 
-AlamoTimes.new.call
+AlamoTimes::CLI.new.call

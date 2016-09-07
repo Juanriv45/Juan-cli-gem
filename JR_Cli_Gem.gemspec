@@ -5,13 +5,13 @@ require 'JR_Cli_Gem/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "JR_Cli_Gem"
-  spec.version       = JRCliGem::VERSION
+  spec.version       = AlamoTimes::VERSION
   spec.authors       = ["Juan Rivera"]
   spec.email         = ["juanriv45@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Dallas - Alamo Draft House movie list from today and their times"
+  spec.description   = "Alamo Draft House movie list from today and their times"
+  spec.homepage      = "https://github.com/Juanriv45/Juan-cli-gem"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
