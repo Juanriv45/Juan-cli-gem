@@ -1,5 +1,2 @@
-require "JR_Cli_Gem/version"
-
-module JRCliGem
-  # Your code goes here...
-end
+require_relative "./JR_Cli_Gem/version"
+require_relative './JR_Cli_Gem/cli'
