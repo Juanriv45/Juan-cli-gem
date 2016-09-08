@@ -1,18 +1,17 @@
 class MoviesComingSoon::CLI
 
   def call
-    puts "These are the movies that are being shown today"
+    puts "This is a list of the movies that are coming soon (IMBD Site)"
     list_movies
     menu
   end
 
   def list_movies
-    puts "Joe Dirt"
-    puts "MIB 3"
+    puts MoviesComingSoon::Movies.today
   end
 
   def menu
-    puts "Enter the name of the movie of which you would like to see the movie times for or enter list to see the list again or enter exit:"
+    puts "Enter the name of the movie of which you would like to see a description for or enter list to see the list again or enter exit:"
     input = nil
     while input != "exit"
       input = gets.strip.downcase
