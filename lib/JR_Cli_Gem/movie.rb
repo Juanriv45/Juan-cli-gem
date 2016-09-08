@@ -1,11 +1,11 @@
-class AlamoTimes::Movie
+class MoviesComingSoon::Movie
   attr_accessor :name, :times
 
   def self.today
-    self.scrape_alamo
+    self.scrape_IMBD
   end
 
-  def self.scrape_alamo
+  def self.scrape_IMBD
     doc = Nokogiri::HTML(open("http://www.imdb.com/movies-coming-soon/"))
     movie = self.new
 

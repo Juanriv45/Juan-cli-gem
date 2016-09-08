@@ -1,4 +1,4 @@
-class AlamoTimes::CLI
+class MoviesComingSoon::CLI
 
   def call
     puts "These are the movies that are being shown today"

@@ -5,7 +5,7 @@ require 'JR_Cli_Gem/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "JR_Cli_Gem"
-  spec.version       = AlamoTimes::VERSION
+  spec.version       = MoviesComingSoon::VERSION
   spec.authors       = ["Juan Rivera"]
   spec.email         = ["juanriv45@gmail.com"]
 
