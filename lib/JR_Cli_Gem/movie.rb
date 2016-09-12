@@ -25,6 +25,14 @@ class MoviesComingSoon::Movie
 
   end
 
+  def self.chosen_movie_description(movie)
+    if @@movie_list.include?(movie) then
+      @@description_list[@@movie_list.index(movie)]
+    else
+      puts "Sorry, please try again"
+    end
+  end
+
   def self.movie_list
     @@movie_list
   end
