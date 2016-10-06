@@ -3,7 +3,7 @@
 class MoviesComingSoon::CLI
 
   def call
-    puts "This is a list of the movies that are coming soon (IMBD Site)"
+    puts "This is a list of the movies that are coming soon (IMDB Site)"
     retrieve_movies
     list_movies
     menu
