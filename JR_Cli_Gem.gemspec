@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Juan Rivera"]
   spec.email         = ["juanriv45@gmail.com"]
 
-  spec.summary       = "Dallas - Alamo Draft House movie list from today and their times"
-  spec.description   = "Alamo Draft House movie list from today and their times"
+  spec.summary       = "Gem pulls an upcoming movie list from the IMDB website."
+  spec.description   = "The Gem will pull a movie list but it will also show the description about the movie selected from the list."
   spec.homepage      = "https://github.com/Juanriv45/Juan-cli-gem"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

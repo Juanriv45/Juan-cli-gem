@@ -1,8 +1,6 @@
 # JRCliGem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/JR_Cli_Gem`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This CLI Gem will retrieve a list of upcoming movies from the IMDB website. When the user selects one of the movies from the list, the CLI Gem will also retrieve a short description about that specific movie.
 
 ## Installation
 
@@ -20,10 +18,6 @@ Or install it yourself as:
 
     $ gem install JR_Cli_Gem
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -33,4 +27,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/JR_Cli_Gem.
-
