@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'JR_Cli_Gem/version'
+require './lib/movies_coming_soon/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "JR_Cli_Gem"

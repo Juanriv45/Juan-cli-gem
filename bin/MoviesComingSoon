@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require "bundler/setup"
-require "JR_Cli_Gem"
+require "movies_coming_soon"
 
-require './lib/JR_Cli_Gem'
 
+#require './lib/JR_Cli_Gem'
+require './lib/movies_coming_soon'
 MoviesComingSoon::CLI.new.call
