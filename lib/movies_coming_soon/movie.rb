@@ -3,10 +3,8 @@ class MoviesComingSoon::Movie
   @@movie_list = []
 
   def self.scrape_IMDB
-
     doc = Nokogiri::HTML(open("http://www.imdb.com/movies-coming-soon/"))
     doc.css(".overview-top").collect do |movie|
-      #puts movie.css('h4 a').text.gsub(/[(]\w+[)]/, "").strip
       @@movie_list << {
         :title => movie.css('h4 a').text.gsub(/[(]\w+[)]/, "").strip,
         :description => movie.css('div.outline').text.strip
@@ -15,25 +13,18 @@ class MoviesComingSoon::Movie
 
   end
 
-#  def self.chosen_movie_description(movie)
-#    if @@movie_list.include?(movie) then
-#      @@description_list[@@movie_list.index(movie)]
-#    else
-#      puts "Sorry, please try again"
-#    end
-#  end
-
   def self.movie_included?(input)
-    lower_case_list = @@movie_list.collect do |movie|
-      movie.downcase
+    lower_case_list = []
+    @@movie_list.select do |movie|
+      lower_case_list << movie[:title].downcase
     end
     lower_case_list.include?(input)
   end
 
   def self.movie_description(input)
-    @@movie_list.each_with_index do |movie,index|
-      if movie.downcase == input then
-        puts @@description_list[index]
+    @@movie_list.select do |movie|
+      if movie[:title].downcase == input then
+        puts movie[:description]
       end
     end
   end
@@ -43,6 +34,5 @@ class MoviesComingSoon::Movie
         puts movie[:title]
     end
   end
-
 
 end

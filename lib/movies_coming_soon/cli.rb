@@ -30,7 +30,7 @@ class MoviesComingSoon::CLI
       list_movies
       menu
     elsif input == "exit"
-      puts "Thank you, please try again later!"
+      puts "Thank you! Goodbye!."
     else
       puts "Sorry, please try again"
       menu
